@@ -17,6 +17,9 @@ struct cs1550_sem
 
 	/* Per-semaphore lock, serializes access to value */
 	spinlock_t lock;
+
+	struct list_head waiting tasks; // list of waiting processes
+	struct list_head list; // pointers to next and previous semaphores
 };
 
 #endif
