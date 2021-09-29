@@ -445,7 +445,7 @@
 438	i386	pidfd_getfd		sys_pidfd_getfd
 439	i386	faccessat2		sys_faccessat2
 440	i386	process_madvise		sys_process_madvise
-441 i386    cs1550_down     sys_cs1550_down // Semaphore operation
-442 i386    cs1550_up       sys_cs1550_up   // Semaphore operarion
-443 i386    cs1550_create   sys_cs1550_create // Operation to manage Semaphore
-444 i386    cs1550_close    sys_cs1550_close  // Operation to manage Semaphore
+441	i386	cs1550_create		sys_cs1550_create
+442	i386	cs1550_up		    sys_cs1550_up
+443	i386    cs1550_down		    sys_cs1550_down
+444	i386    cs1550_close		sys_cs1550_close
